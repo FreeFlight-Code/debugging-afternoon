@@ -53,13 +53,11 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar navigate={this.navigate} />
-        <div className="main-container">
           {showCart ? (
             <ShoppingCart shoppingCart={cart} removeFromCart={this.removeFromCart} />
           ) : (
             <StoreFront products={products} addToCart={this.addToCart} />
           )}
-        </div>
       </div>
     );
   }
